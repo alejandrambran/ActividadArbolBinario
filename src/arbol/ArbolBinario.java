@@ -38,7 +38,11 @@ public class ArbolBinario {
 
     // Metodo para recorrer el árbol en inorden
     public void inorden() {
-        inordenRecursivo(raiz);
+        if (raiz == null) {
+            System.out.println("El árbol está vacío");
+        } else {
+            inordenRecursivo(raiz);
+        }
     }
 
     // Recorre: izquierda → raíz → derecha
